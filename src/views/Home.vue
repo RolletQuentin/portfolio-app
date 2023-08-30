@@ -1,6 +1,7 @@
 <template>
     <div class="wrapper">
         <Profile class="profile" />
+        <Technologies class="technologies" />
         <Experiences class="experiences" />
         <GithubProjects class="github-projects" />
     </div>
@@ -10,12 +11,14 @@
 import Profile from "@/components/Cards/Profile.vue";
 import GithubProjects from "@/components/Cards/GithubProjects.vue";
 import Experiences from "@/components/Cards/Experiences.vue";
+import Technologies from "@/components/Cards/Technologies.vue";
 
 export default {
     components: {
         Profile,
         GithubProjects,
         Experiences,
+        Technologies,
     },
     setup() {},
 };
