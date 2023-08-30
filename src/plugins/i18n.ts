@@ -1,6 +1,6 @@
 import { createI18n } from "vue-i18n";
-import fr from "@/locales/fr.js";
-import en from "@/locales/en.js";
+import fr from "@/locales/fr";
+import en from "@/locales/en";
 
 export default createI18n({
     legacy: false,

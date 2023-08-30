@@ -1,6 +1,6 @@
 <template>
     <PersonalCard>
-        <v-img src="/photo.JPG" />
+        <v-img :src="photo" />
         <h1>Quentin ROLLET</h1>
         <v-list>
             <v-list-item prepend-icon="mdi-email"
@@ -15,12 +15,17 @@
 
 <script lang="ts">
 import PersonalCard from "./PersonalCard.vue";
+import photo from "@/assets/logo.png";
 
 export default {
     components: {
         PersonalCard,
     },
-    setup() {},
+    setup() {
+        return {
+            photo,
+        };
+    },
 };
 </script>
 
