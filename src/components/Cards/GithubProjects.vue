@@ -26,6 +26,7 @@ import cLogo from "@/assets/c.png";
 import latexLogo from "@/assets/latex.png";
 import htmlLogo from "@/assets/html.png";
 import javascriptLogo from "@/assets/javascript.png";
+import vueLogo from "@/assets/vue.png";
 import screenLogo from "@/assets/screen.png";
 
 export default {
@@ -82,6 +83,9 @@ export default {
                     break;
                 case "JavaScript":
                     logo = javascriptLogo;
+                    break;
+                case "Vue":
+                    logo = vueLogo;
                     break;
                 default:
                     logo = screenLogo;

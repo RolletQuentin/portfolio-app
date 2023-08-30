@@ -1,6 +1,7 @@
 <template>
     <div class="wrapper">
         <Profile class="profile" />
+        <Experiences class="experiences" />
         <GithubProjects class="github-projects" />
     </div>
 </template>
@@ -8,11 +9,13 @@
 <script lang="ts">
 import Profile from "@/components/Cards/Profile.vue";
 import GithubProjects from "@/components/Cards/GithubProjects.vue";
+import Experiences from "@/components/Cards/Experiences.vue";
 
 export default {
     components: {
         Profile,
         GithubProjects,
+        Experiences,
     },
     setup() {},
 };
