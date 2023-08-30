@@ -1,4 +1,6 @@
 export default {
+    // header
+    resume: "Resume",
     // profile
     profile: "Profile",
 

@@ -15,7 +15,7 @@
 
 <script lang="ts">
 import PersonalCard from "./PersonalCard.vue";
-import photo from "@/assets/logo.png";
+import photo from "@/assets/photo.jpg";
 
 export default {
     components: {
