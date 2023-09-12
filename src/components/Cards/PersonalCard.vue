@@ -10,6 +10,7 @@ export default {};
 
 <style>
 .v-sheet {
+    margin: 15px;
     padding: 20px;
 }
 </style>
