@@ -26,6 +26,8 @@ export default {
 
 <style>
 .wrapper {
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px;
 }
 
@@ -37,5 +39,13 @@ export default {
     width: 800px;
     height: 500px;
     overflow: scroll;
+}
+
+.experiences {
+    width: 500px;
+}
+
+.technologies {
+    width: 1000px;
 }
 </style>
