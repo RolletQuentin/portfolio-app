@@ -12,6 +12,9 @@ COPY package*.json ./
 # install project dependencies
 RUN npm install
 
+# to solve the problem for the i18n dependance
+RUN sed -i 's/MessageFunctionInternal/MessageFunctionReturn/g' node_modules/@intlify/core-base/dist/core-base.d.ts
+
 # copy project files and folders to the current working directory (i.e. 'app' folder)
 COPY . .
 
