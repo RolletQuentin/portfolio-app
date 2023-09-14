@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
     {
-        path: "/portfolio-app",
+        path: "/portfolio",
         component: () => import("@/layouts/default/Default.vue"),
         children: [
             {
