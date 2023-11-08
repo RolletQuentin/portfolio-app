@@ -38,14 +38,14 @@ export default {
 }
 
 .github-projects {
-    min-width: 500px;
+    min-width: 300px;
     max-height: 500px;
     overflow: scroll;
     flex: 5;
 }
 
 .experiences {
-    min-width: 400px;
+    min-width: 300px;
     flex: 2;
 }
 
