@@ -80,17 +80,17 @@ header {
 .left {
     display: flex;
     align-items: center;
+}
 
-    h1 {
-        font-size: 2em;
-        margin-right: 30px;
-    }
+.left h1 {
+    font-size: 2em;
+    margin-right: 30px;
+}
 
-    nav a {
-        text-decoration: none;
-        color: black;
-        font-size: 1.25em;
-        font-weight: 500;
-    }
+.left nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+    font-weight: 500;
 }
 </style>
