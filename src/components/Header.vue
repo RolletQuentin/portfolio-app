@@ -1,6 +1,9 @@
 <template>
     <header>
-        <h1>Portfolio</h1>
+        <div class="left">
+            <h1>Portfolio</h1>
+            <nav><a :href="blog">Blog</a></nav>
+        </div>
         <div class="right">
             <v-btn :href="resume" download>{{ $t("resume") }}</v-btn>
             <LanguageSelector class="selector" />
@@ -21,6 +24,7 @@ export default {
     setup() {
         const { locale } = useI18n();
         const resume = ref();
+        const blog = ref();
 
         function setResume() {
             if (locale.value === "fr") {
@@ -31,13 +35,24 @@ export default {
         }
         setResume();
 
+        function setBlogLink() {
+            locale.value === "fr"
+                ? (blog.value = "https://rolletquentin.com/blog/fr/")
+                : (blog.value = "https://rolletquentin.com/blog/en-us/");
+        }
+        setBlogLink();
+
         watch(
             () => locale.value,
-            () => setResume()
+            () => {
+                setResume();
+                setBlogLink();
+            }
         );
 
         return {
             resume,
+            blog,
         };
     },
 };
@@ -60,5 +75,22 @@ header {
 .right {
     display: flex;
     justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-size: 2em;
+        margin-right: 30px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.25em;
+        font-weight: 500;
+    }
 }
 </style>
