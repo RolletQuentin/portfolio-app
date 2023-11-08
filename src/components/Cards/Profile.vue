@@ -1,15 +1,17 @@
 <template>
-    <PersonalCard>
+    <PersonalCard class="profile">
         <v-img :src="photo" />
-        <h1>Quentin ROLLET</h1>
-        <v-list>
-            <v-list-item prepend-icon="mdi-email"
-                >rolletquen@gmail.com</v-list-item
-            >
-            <v-list-item prepend-icon="mdi-map-marker"
-                >Pau (France)</v-list-item
-            >
-        </v-list>
+        <div class="infos">
+            <h1>Quentin ROLLET</h1>
+            <v-list>
+                <v-list-item prepend-icon="mdi-email"
+                    >rolletquen@gmail.com</v-list-item
+                >
+                <v-list-item prepend-icon="mdi-map-marker"
+                    >Pau (France)</v-list-item
+                >
+            </v-list>
+        </div>
     </PersonalCard>
 </template>
 
@@ -30,7 +32,30 @@ export default {
 </script>
 
 <style scoped>
+.profile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
 .v-img {
+    min-width: 150px;
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
+    flex: 1;
+}
+
+@media (max-width: 512px) {
+    .v-img {
+        min-width: 80%;
+    }
 }
 </style>

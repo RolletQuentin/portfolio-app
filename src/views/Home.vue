@@ -28,24 +28,29 @@ export default {
 .wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 10px;
 }
 
 .profile {
-    width: 300px;
+    min-width: 300px;
+    flex: 1;
 }
 
 .github-projects {
-    width: 800px;
-    height: 500px;
+    min-width: 500px;
+    max-height: 500px;
     overflow: scroll;
+    flex: 5;
 }
 
 .experiences {
-    width: 500px;
+    min-width: 400px;
+    flex: 2;
 }
 
 .technologies {
-    width: 1000px;
+    min-width: 70%;
+    flex: 5;
 }
 </style>

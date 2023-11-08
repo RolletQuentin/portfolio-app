@@ -1,7 +1,7 @@
 <template>
     <PersonalCard>
         <h1>Technologies</h1>
-        <v-carousel hide-delimiters>
+        <v-carousel hide-delimiter-background show-arrows="hover">
             <v-carousel-item>
                 <v-sheet class="tech-wrapper">
                     <h2>API</h2>
@@ -107,10 +107,12 @@ export default {
 <style scoped>
 .tech-wrapper {
     height: 100%;
+    width: 95%;
+    margin: auto;
 }
 
 .tech-logo {
-    height: 50%;
+    height: 30%;
     display: flex;
     flex-direction: row;
     transform: scaleY(1);
@@ -133,5 +135,19 @@ export default {
     white-space: pre-line;
     margin-top: 20px;
     text-align: justify;
+}
+
+@media (max-width: 720px) {
+    .tech-wrapper {
+        height: auto;
+    }
+
+    .tech-logo {
+        display: none;
+    }
+
+    .tech-description {
+        margin-top: 0;
+    }
 }
 </style>
