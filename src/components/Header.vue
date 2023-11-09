@@ -5,7 +5,7 @@
             <nav><a :href="blog">Blog</a></nav>
         </div>
         <div class="right">
-            <v-btn :href="resume" download>{{ $t("resume") }}</v-btn>
+            <v-btn :href="resume" target="_blank">{{ $t("resume") }}</v-btn>
             <LanguageSelector class="selector" />
         </div>
     </header>
@@ -28,9 +28,11 @@ export default {
 
         function setResume() {
             if (locale.value === "fr") {
-                resume.value = "/portfolio-app/CV.pdf";
+                resume.value =
+                    "https://drive.google.com/file/d/1cZYEdTFjTXZVNqXsmkOrp5ZGUuqhXGi7/view";
             } else {
-                resume.value = "/portfolio-app/CV_english.pdf";
+                resume.value =
+                    "https://drive.google.com/file/d/1ynDz0XzV98SVXDYzDeKSxSJeBTBmBdE4/view";
             }
         }
         setResume();
