@@ -6,7 +6,7 @@ export default {
     profile: "Profil",
 
     // github projects
-    githubProjects: "Projets publiques",
+    githubProjects: "Projets publics",
     githubDescription:
         "Vous trouverez ici tout mes projets publiques depuis mon compte Github !",
 
