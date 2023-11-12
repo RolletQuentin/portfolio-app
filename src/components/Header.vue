@@ -95,4 +95,9 @@ header {
     font-size: 1.25em;
     font-weight: 500;
 }
+
+.v-btn {
+    color: #ffffff;
+    background-color: #2e368d;
+}
 </style>

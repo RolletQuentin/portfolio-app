@@ -77,6 +77,11 @@ export default {
     flex: 1;
 }
 
+.v-btn {
+    color: #ffffff;
+    background-color: #2e368d;
+}
+
 @media (max-width: 980px) {
     .profile {
         flex-direction: row;
