@@ -49,8 +49,6 @@ export default {
 .v-img {
     min-width: 150px;
     max-width: 100%;
-    height: auto;
-    border-radius: 50%;
     flex: 1;
 }
 
