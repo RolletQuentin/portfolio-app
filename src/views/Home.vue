@@ -45,19 +45,24 @@ export default {
 }
 
 .experiences {
-    min-width: 300px;
+    min-width: 500px;
     flex: 2;
 }
 
 .technologies {
-    min-width: 600px;
+    min-width: 70%;
     flex: 5;
+}
+
+@media (max-width: 1280px) {
+    .technologies {
+        min-width: 600px;
+    }
 }
 
 @media (max-width: 640px) {
     .technologies {
         min-width: 300px;
-        max-width: 100%;
     }
 }
 </style>
