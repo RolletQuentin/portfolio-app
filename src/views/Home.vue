@@ -50,7 +50,14 @@ export default {
 }
 
 .technologies {
-    min-width: 70%;
+    min-width: 600px;
     flex: 5;
+}
+
+@media (max-width: 640px) {
+    .technologies {
+        min-width: 300px;
+        max-width: 100%;
+    }
 }
 </style>

@@ -34,6 +34,7 @@ export default {
 <style scoped>
 .profile {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -53,9 +54,15 @@ export default {
     flex: 1;
 }
 
+@media (max-width: 980px) {
+    .profile {
+        flex-direction: row;
+    }
+}
+
 @media (max-width: 512px) {
-    .v-img {
-        min-width: 80%;
+    .profile {
+        flex-direction: column;
     }
 }
 </style>

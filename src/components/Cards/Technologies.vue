@@ -137,7 +137,7 @@ export default {
     text-align: justify;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 620px) {
     .tech-wrapper {
         height: auto;
     }
