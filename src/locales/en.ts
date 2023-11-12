@@ -1,6 +1,6 @@
 export default {
     // header
-    resume: "Resume",
+    resume: "My Resume",
     // profile
     profile: "Profile",
 
