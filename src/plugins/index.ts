@@ -6,7 +6,7 @@
 
 // Plugins
 import { loadFonts } from "./webfontloader";
-import router from "../router";
+import { router } from "../router";
 import i18n from "./i18n";
 
 // Types

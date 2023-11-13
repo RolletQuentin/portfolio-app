@@ -1,5 +1,5 @@
 <template>
-    <v-img :src="logo" @click="changeLanguage" width="30px"> </v-img>
+    <img :src="logo" @click="changeLanguage" />
 </template>
 
 <script lang="ts">
@@ -20,7 +20,7 @@ export default {
             () => locale.value,
             (newLanguage: string) => {
                 logo.value = newLanguage === "fr" ? franceLogo : usLogo;
-            }
+            },
         );
 
         return {
@@ -32,8 +32,11 @@ export default {
 </script>
 
 <style scoped>
-.v-img:hover {
+img {
     border-radius: 50%;
+    width: 30px;
+}
+img:hover {
     cursor: pointer;
 }
 </style>
