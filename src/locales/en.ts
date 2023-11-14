@@ -1,13 +1,14 @@
 export default {
+    // home
+    home: "Home",
+
     // header
     resume: "My Resume",
     // profile
     profile: "Profile",
 
-    // github projects
-    githubProjects: "Public projects",
-    githubDescription:
-        "Here are all my public projects from my Github account !",
+    // projects
+    projects: "My projects",
 
     // work experiences
     experiences: "Work experience",
@@ -31,4 +32,7 @@ export default {
         "I also master two essential frontend technologies for application development: Vue.js and React.\n\nWith these two frameworks, I am capable of creating responsive interfaces by customizing modular components for scalable applications.",
     backendDescription:
         "In addition to my expertise in frontend development with Vue.js, React, and HTML, as well as API creation with Express.js, Quarkus, and FastAPI, I also have proficiency in other essential programming languages.My adaptability to these diverse technologies allows me to cater to the varied needs of any project, ensuring top-quality results and maximum efficiency.",
+
+    // blog
+    blog: "My blog",
 };
